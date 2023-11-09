@@ -10,7 +10,8 @@ pipeline{
 	    stage('gitclone') {
 
 			steps {
-				git 'https://github.com/Anshuman-QwikSkills/aws-devops-mini-project-6.git'
+				git checkout
+				git scm
 			}
 		}
 
