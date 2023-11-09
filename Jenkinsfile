@@ -10,8 +10,7 @@ pipeline{
 	    stage('gitclone') {
 
 			steps {
-				git checkout
-				git scm
+				checkout scm
 			}
 		}
 
